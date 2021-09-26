@@ -6,7 +6,7 @@ The webapp is deployed My Server here - https://virmach.gq
 
 The webapp is deployed IBM here - https://virmach.mybluemix.net/
 
-The webapp is deployed Okteto here - https://virmach-literaturepro.cloud.okteto.net/
+The webapp is deployed Okteto here - https://vir-literaturepro.cloud.okteto.net/
 
 ---
 
