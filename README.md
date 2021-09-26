@@ -4,8 +4,6 @@
 
 The webapp is deployed My Server here - https://virmach.gq
 
-The webapp is deployed Divio here - https://virmach.us.aldryn.io/
-
 The webapp is deployed IBM here - https://virmach.mybluemix.net/
 
 The webapp is deployed Okteto here - https://virmach-literaturepro.cloud.okteto.net/
