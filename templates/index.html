@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Datas{% endblock %}
+
+{% block body %}
+  {% if datas %}
+    <div class="table-responsive">
+      <table  class="ui selectable celled black table unstackable">
+        <thead>
+          <tr class="title">
+    		<th width="5"></th>
+    		<th width="150"> <wired-button >年份-日期-时间</wired-button></th>
+            <th width="80"> <wired-button >价格</wired-button></th>
+            <th width="40"> <wired-button >CPU</wired-button></th>
+            <th width="80"> <wired-button >内存</wired-button></th>
+            <th width="80"> <wired-button >容量</wired-button></th>
+            <th width="80"> <wired-button >流量</wired-button></th>
+            <th width="40"> <wired-button >IP</wired-button></th>
+            <th width="120">&nbsp;&nbsp;&nbsp;&nbsp; <wired-button >地点</wired-button></th>
+            <th width="80"> <wired-button >架构</wired-button></th>
+            <th width="60"> <wired-button >Win</wired-button></th>
+            <th width="150"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wired-button >标签</wired-button></th>
+    	  </tr>
+        </thead>
+        <tbody>
+          {% for data in datas %}
+          <tr>
+            <td><p align="center" style="font-size:4pt">{{ loop.index + pagination.skip }}</p></td>
+            <td><p align="center" style="font-size:4pt">{{ data.date}} </p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.price}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.cpu}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.ram}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.hdd}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.bw}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.ips}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.location }}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.virt }}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.win}}</p></td>
+        	<td><p align="center" style="font-size:4pt">{{ data.message}}</p></td>
+        	
+          </tr>
+          {% endfor %}
+        </tbody>
+        {% if pagination.links %}
+          <tfoot>
+            <tr>
+              <th colspan="12">
+                <div class="ui right floated pagination menu">{{ pagination.links }}</div>
+              </th>
+            </tr>
+          </tfoot>
+        {% endif %}
+      </table>
+    </div>
+  {% endif %}
+{% endblock %}
