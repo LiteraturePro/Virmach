@@ -14,7 +14,7 @@ The webapp is deployed Okteto here - https://vir-literaturepro.cloud.okteto.net/
 ![](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6cc46a21-10af-4cd7-a52d-d8c57329708e/04834455-4789-4444-acf3-e1dabf39efd1.png)
 
 # Install
-####  源码：Flask、Docker自构建都行，随你
+####  源码、Docker自构建都行，随你
 
 #### Docker:   literature/virmach  端口8080 
 
