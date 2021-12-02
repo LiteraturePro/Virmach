@@ -104,7 +104,7 @@ def Formatdata(data):
 # 向数据库中插入数据
 def Insert(data):
     # 添加date字段
-    buyinfo["date"] = datetime.datetime.now(pytz.timezone('PRC')).strftime("%Y-%m-%d %H:%M:%S")
+    data["date"] = datetime.datetime.now(pytz.timezone('PRC')).strftime("%Y-%m-%d %H:%M:%S")
     # 删ended除字段
     del data["ended"]
     # 执行插入
