@@ -165,7 +165,7 @@ def Getinfo():
                         buyinfo["url"] = 'https://billing.virmach.com/cart.php?a=add&pid=' + str(buyinfo['pid']) + '&billingcycle=annually'
                         buyinfo["ended"] = "销售中"
                         # 插入数据库
-                        Insert(data)
+                        Insert(buyinfo)
                         return Formatdata(buyinfo)
     else:
         # 活动结束就返回设置的无用数据
