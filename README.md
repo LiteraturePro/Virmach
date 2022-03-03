@@ -6,7 +6,6 @@ The webapp is deployed My Server here - https://virma.cf
 
 The webapp is deployed IBM here - https://virmach.mybluemix.net/
 
-The webapp is deployed Okteto here - https://vir-literaturepro.cloud.okteto.net/
 
 ---
 
