@@ -9,3 +9,4 @@ datetime
 pytz
 jinja2==2.10.1
 PyJWT
+sentry-sdk[flask]
