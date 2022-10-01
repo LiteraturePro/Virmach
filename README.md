@@ -2,7 +2,7 @@
 
 > virmach黑五活动乞丐版监控
 
-The webapp is deployed My Server here - http://virma.cf
+The webapp is deployed My Server here - https://virmach.fly.dev/
 
 The webapp is deployed IBM here - https://virmach.mybluemix.net/
 
